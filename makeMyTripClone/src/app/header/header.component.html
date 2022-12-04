@@ -1,0 +1,103 @@
+<nav>
+    <input type="checkbox" id="check">
+    <label  class="checkbtn" for="check"><i class="bi bi-grid-3x3-gap-fill"></i></label>
+    <a routerLink=""><label class="logo"><img class="logoImg" src="./assets/logoimg.png" alt="logo"></label></a>
+    <ul style="margin-left:20px ;">
+        <li><a routerLink=""><span><i class="bi bi-airplane"></i>Flights</span></a></li>
+        <li><a routerLink="hotelB"><span><i class="bi bi-building"></i>Hotels</span></a></li>
+        <li><span><i class="bi bi-house-door"></i> Homestays</span></li>
+        <li><span><i class="bi bi-gift"></i>Holiay packages</span></li>
+        <li><span><i class="bi bi-train-freight-front"></i>Trains</span></li>
+        <li><span><i class="bi bi-train-front"></i>Buses</span></li>
+        <li><span><i class="bi bi-car-front"></i>Cabs</span></li>
+        <li><span><i class="bi bi-currency-rupee"></i>Forex</span></li>
+        <li><span><i class="bi bi-airplane-fill"></i>Charter Flights</span></li>
+        <li><span><i class="bi bi-person-workspace"></i>Activities</span></li>
+        <li><div *ngIf="condition else elseblock"><li><span class="login" (click)="logOut()"><i style="color: rgb(1, 1, 12);" class="bi bi-person-circle"> {{fName}}</i>LogOut</span></li></div></li>
+        <ng-template #elseblock>
+        <li><span class="login" (click)="open(content)" ><i style="color: rgb(23, 23, 239);" class="bi bi-r-circle"></i>Login & Register</span></li>
+        </ng-template>
+    </ul>
+  </nav>
+  
+  <!-- modal -->
+  <ngb-toast id="index1"  *ngIf="showToast" (hide)="showToast = false">
+    logIn Successfull
+  </ngb-toast>
+  <!-- Modal  logIn -->
+  <ng-template #content let-modal >
+     <div><img id="imglogin" class="logo" src="./assets/logoimg.png" alt="logo">
+          <button id="cross" type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button></div>
+          <ngb-toast id="index"  *ngIf="ToastFail" (hide)="ToastFail = false">
+            Invalid Username/Password
+          </ngb-toast>
+          <ngb-toast id="index1"  *ngIf="RegToast" (hide)="RegToast = false">
+            Register Successfull
+          </ngb-toast>
+     <div class="modal-header">
+       <h5  class="modal-title" id="modal-basic-title">Login Form</h5>
+     </div>
+     <div class="modal-body">
+       <form>
+          <div [formGroup]="logInForm" class="mb-3">
+             <label class="form-label">Username : </label><br><br>
+             <input formControlName="username" type="text" class="form-control"  placeholder="Username"><br>
+             <div class="validator" *ngIf="logInForm.controls['username'].invalid && (logInForm.controls['username'].dirty || logInForm.controls['username'].touched)">
+              Please enter the required field...
+             </div>
+             <label  class="form-label">Password :</label><br><br>
+             <input formControlName="password" type="password" class="form-control" placeholder="Password"><br>
+             <div class="validator" *ngIf="logInForm.controls['password'].invalid && (logInForm.controls['password'].dirty || logInForm.controls['username'].touched)">
+              Please enter the required field...
+             </div>
+           </div>
+       </form>
+     </div>
+     <div class="modal-footer">
+       <button (click)="Register()"(click)="modal.dismiss('Cross click')"  class="btn btn-danger subb" (click)="open(content2)">Create Account</button>
+       <button (click)="logInSubmit()" [disabled]="logInForm.invalid" class="btn btn-primary subb">Submit</button>
+     </div>
+   </ng-template>
+
+   <!-- Register -->
+ <ng-template #content2 let-modal>
+    <div><a routerLink=""><img id="imglogin" class="logo" src="./assets/logoimg.png" alt="logo"></a>
+    <button id="cross" type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button></div>
+    <div class="modal-header"><h3 class="modal-title">Create Account</h3></div>
+<div  class="modal-body">
+<form >
+<div [formGroup]="registerForm" class="mb-3">
+    <input formControlName="firstName" type="text" class="form-control"  placeholder="First Name"><br>
+    <p  *ngIf="f['firstName'].invalid && (f['firstName'].dirty || f['firstName'].touched)"  class="validator">Please enter the required field...</p>
+    <input formControlName="lastName" type="text" class="form-control" placeholder="Last name"><br>
+    <p  *ngIf="f['lastName'].invalid && (f['lastName'].dirty || f['lastName'].touched)"  class="validator">Please enter the required field...</p>
+    <input formControlName="username" type="email" class="form-control"  placeholder="Username@"><br>
+    <div class="validator" *ngIf="f['username'].invalid && (f['username'].dirty || f['username'].touched)">
+        Please enter the required field...  
+    </div>
+    <input  [(ngModel)]="pass" formControlName="password" type="text" class="form-control" placeholder="Password"><br>
+    <div class="validator" *ngIf="f['username'].invalid && (f['username'].dirty || f['username'].touched)">
+      <div *ngIf="f['password'].errors?.['required']">
+        Please enter the required field...
+      </div>
+      <div *ngIf="f['password'].errors?.['pattern']">
+        Password must contain at least one number, one uppercase and a lowercase letter 
+        and at least 8 characters<br>Password cannot contain whitespace
+      </div> 
+    </div>
+    <input [(ngModel)]="cpass" *ngIf="f['password'].dirty" formControlName="conpassword" type="text" class="form-control" placeholder="Conform Password"><br>
+    <div class="validator" *ngIf="f['conpassword'].invalid && (f['conpassword'].dirty || f['conpassword'].touched)">
+      <div *ngIf="f['conpassword'].errors?.['required']">
+        Please enter the required field...
+      </div>
+      <div *ngIf="(f['conpassword'].dirty || f['conpassword'].touched && (pass != cpass))">
+        Passwords did not match
+      </div>
+    </div>
+  </div> 
+</form>
+<div class="modal-footer">
+    <button [disabled]="logInForm.invalid" (click)="submitUserD()" (click)="modal.dismiss('Cross click')"  (click)="open(content)"  class="btn btn-primary subb">Submit</button>
+  </div>
+</div>
+</ng-template>

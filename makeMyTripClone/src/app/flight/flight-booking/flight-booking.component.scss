@@ -1,0 +1,112 @@
+.ticket-type{
+    margin-top: 50px;
+}
+.selected-tecket-type{
+    border-radius: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+.selected-tecket-type:hover{
+    background-color: #ede6e6;
+    color: black;
+}
+.selecte-loc-main{
+    border: 0.1px solid rgb(230, 227, 234);
+    height: 114px;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+}
+.selecte-loc-main1{
+    border: 0px solid rgb(230, 227, 234);
+    height: 112px;
+    width: 25%;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.selecte-loc-main2{
+    border: 0.05px solid rgb(230, 227, 234);
+    height: 112px;
+    width: 25%;
+    padding: 10px;
+    font-weight: bold;
+}
+.selecte-loc-main34{
+    border: 0.05px solid rgb(230, 227, 234);
+    height: 112px;
+    width: 15%;
+    font-weight: bold;
+}
+.selecte-loc-main5{
+    padding: 5px;
+    font-weight: bold;
+}
+h2{
+    color: black;
+}
+.form-control{
+  border: 0;
+  outline: 0;
+  background: none;
+  min-width: 250px;
+  max-width: 36px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.airportName{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+#butSearch{
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 40%;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(to left, #410da8,#715bde,green);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+   }
+   #butSearch:hover{
+       background-image: linear-gradient(to right, #410da8,#715bde,green);
+       color: white;
+   }
+
+#textF{
+    font-size: 20px;
+    font-weight: 400;
+}
+.tikets{
+    background-color: white;
+    width: 1200px;
+    z-index: 1;
+    top:77px ;
+    position: absolute;
+    box-shadow: 4px 4px rgb(250, 3, 3), -0.5em 0 .1em orangered;
+    padding: 20px;
+    margin: 70px;
+  }
+  .addpasen{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #flowtext{
+    background-color: orangered;
+    color:white;
+    padding: 5px;
+    font-weight: 400;
+  }

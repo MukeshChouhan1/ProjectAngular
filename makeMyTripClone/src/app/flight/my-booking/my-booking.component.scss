@@ -1,0 +1,42 @@
+*{
+    color: gray;
+}
+.table{
+    background-color: white;
+}
+.grid{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 20px;
+}
+h3{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 100px;
+}
+.thead{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+.thead2{
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+}
+.thead3{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+@media (max-width:1200px) {
+    .grid{
+        display: block;
+        
+    }
+}

@@ -1,0 +1,64 @@
+<h3>... My Booking  ...</h3>
+<div class="grid">
+        <table  class="table table-striped">
+          
+            <thead>
+              <tr ><th class="thead" colspan="4" >Upcoming</th></tr>
+              <tr>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Price</th>
+                <th scope="col">status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of mybookingData">
+                <th scope="row">{{data.from}}</th>
+                <td >{{data.to}}</td>
+                <td>{{data.price | currency : "INR"}}</td>
+                <td style="color: blue;">{{data.status}}</td>
+              </tr>
+            </tbody>
+          </table>
+        
+    
+        <table  class="table table-striped">
+            <thead>
+              <tr ><th class="thead2" colspan="4" >Completed</th></tr>
+              <tr>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Price</th>
+                <th scope="col">status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of mybookingComplete">
+                <th scope="row">{{data.from}}</th>
+                <td >{{data.to}}</td>
+                <td>{{data.price}}</td>
+                <td style="color: yellowgreen;">{{data.status}}</td>
+              </tr>
+            </tbody>
+          </table>
+        
+    <table  class="table table-striped">
+        <thead>
+          <tr ><th class="thead3" colspan="4" >Cancelled</th></tr>
+          <tr>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Price</th>
+            <th scope="col">status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of mybookingCanl">
+            <th scope="row">{{data.from}}</th>
+            <td >{{data.to}}</td>
+            <td>{{data.price}}</td>
+            <td style="color: red;">{{data.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>

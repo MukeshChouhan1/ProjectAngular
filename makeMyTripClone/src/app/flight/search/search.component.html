@@ -1,0 +1,55 @@
+ <div id="t1">
+  <a routerLink=""><button id="back" class="btn btn-primary"><i style="color:white ;" class="bi bi-skip-backward"></i> Back</button></a>
+  <h2 style="margin: 20px; text-align:center;">Flights from {{from}} to {{to}} </h2>
+  <table class="table table-striped">
+    <tr>
+        <th style="text-align:center;"> Airlines</th>
+        <th>Flight No</th>
+        <th>Departure</th>
+        <th>Arrival</th>
+        <th>Duration</th>
+        <th>Fare</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let data of allFlight">
+        <td style="text-align:center;"><img id="imagefn" src="{{data.airline}}" alt="vita" height="50px" width="150px"></td>
+        <td>{{data.flightNo}}</td>
+        <td>{{data.departure}}</td>
+        <td>{{data.duration}}</td>
+        <td>{{data.arrival}}</td>
+        <td>{{data.ticketP | currency:"INR"}}</td>
+        <td><button class="btn btn-primary" (click)="open(content)" (click)="getFlogo(data)">Book Now</button></td>
+    </tr>
+  </table>
+</div>
+
+<ng-template #content let-modal >
+  <div><img id="imglogin" src="./assets/logoimg.png" alt="logo">
+       <button id="cross" type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button></div>
+  <div class="modal-header">
+    <h5  class="modal-title" id="modal-basic-title">Booking Details</h5>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="booking_container">
+         <div>
+          <p><img  src="{{logoFlight.airline}}" alt="" height="50px" width="150px"></p>
+          <p>{{from}} to {{to}}</p>
+          <p>{{today | date}}</p>
+        </div>
+        <div [formGroup]="bookingForm" class="mb-3">
+          <h3>Traveller Details</h3>
+          <input formControlName="firstName" type="text" class="form-control"  placeholder="First Name"><br>
+          <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name"><br>
+          <button class="btn btn-primary btns"> +Add </button><br><br>
+          <input type="number" formControlName="mobileno"  placeholder="Mobile Number" class="form-control"><br>
+          <input type="email" formControlName="email" placeholder="Enter Email" class="form-control">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-secondary btns" (click)="modal.dismiss('Cross click')">Close</button>
+    <button (click)="BookSubmit()" [disabled]="bookingForm.invalid" class="btn btn-primary btns">Submit</button>
+  </div>
+</ng-template>

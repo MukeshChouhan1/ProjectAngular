@@ -1,0 +1,75 @@
+*{
+    color: rgb(85, 83, 83);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+#t1{
+  box-shadow: 4px 4px rgb(250, 3, 3), -0.5em 0 .1em orangered;
+  background-color: white;
+  margin: 50px;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+// booking css
+
+#imglogin{
+  box-shadow:0px 1px 15px 1px #7a7a7a;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+#cross{
+position: absolute;
+right: 0;
+padding: 10px;
+margin: 10px;
+}
+.modal-header{
+  justify-content: space-around;
+}
+.modal-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+#index{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right:0;
+  color: white;
+  background-color: rgb(201, 18, 18);
+  text-align: center;
+  font-weight: bold;
+}
+.modal-body{
+  padding: 40px;
+}
+.modal-footer{
+  padding: 10px;
+}
+.booking_container{
+  display: flex;
+  gap: 30px;
+}
+.btns{
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+}
+#back{
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+}
+// register css
+
+
+
+

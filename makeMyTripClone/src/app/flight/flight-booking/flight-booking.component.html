@@ -1,0 +1,37 @@
+
+<div class="tikets">
+  <div id="flowtext"><marquee  behavior="" direction="">Tired of comparing the prices of plane tickets? Book your low-cost flight to wild grasslands of Kaziranga National Park, Kullu Manali, Jaisalmer Fort, Desert National Park, Bada Bagh Temple, Gadisar Lake, Red Fort, Lotus Temple.. In order to find the cheapest plane ticket, the sooner you book, the more you save !</marquee></div>
+<div class="ticket-type">
+ </div>
+ <div [formGroup]="locationCity" class="selecte-loc-main">
+   <div class="selecte-loc-main1">
+    <label>FROM</label><br>
+    <select formControlName="from" class="form-control" name="hi" id="">
+      <option value="Nagpur">Nagpur</option>
+      <option value="Pune">Pune</option>
+     </select>
+    <!-- <h2>Nagpur </h2> -->
+    <p class="airportName">NAG, Dr. Babashaheb Ambetkar Airport</p>
+   </div>
+   <div class="selecte-loc-main2">
+    <label>TO</label><br>
+    <select formControlName="to" class="form-control" name="hi" id="">
+     <option value="Mumbai">Mumbai</option>
+     <option value="Gondia">Gondia</option>
+    </select>
+    
+    <!-- <h2>Mumbai</h2> -->
+    <p class="airportName">BOM, Chhatrapati Shiwaji International Airport </p>
+   </div>
+   <div class="selecte-loc-main1"><label>Journey date</label><br>
+    <input id="textF" class="addpasen" type="date">
+   </div>
+   <div class="selecte-loc-main2"><label>Add Passenger</label><br>
+    <input type="number" class="addpasen" placeholder="Enter Passenger">
+   </div>
+   <button (click)="showFlighttime()" id="butSearch">Show flights</button>
+ </div>
+ <p>select A</p>
+ <p>Faire Type:</p>
+</div>
+

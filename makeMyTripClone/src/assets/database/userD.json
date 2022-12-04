@@ -1,0 +1,307 @@
+{
+  "userDetails": [
+    {
+      "firstName": "Mukesh",
+      "lastName": "Chouhan",
+      "username": "mks@gmail.com",
+      "password": "mks@123",
+      "id": 1
+    },
+    {
+      "firstName": "Devesh",
+      "lastName": "Khedkar",
+      "username": "dev@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "firstName": "Suresh",
+      "lastName": "Raina",
+      "username": "s@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "vijay",
+      "lastName": "kkkk",
+      "username": "klkkkkkk",
+      "password": "123llkk",
+      "id": 4
+    },
+    {
+      "firstName": "Chetan",
+      "lastName": "Desai",
+      "username": "chetan@gmail.com",
+      "password": "chetan@123",
+      "id": 5
+    },
+    {
+      "firstName": "Manoj",
+      "lastName": "Munda",
+      "username": "manoj@gmail.com",
+      "password": "manoj@123",
+      "id": 6
+    },
+    {
+      "firstName": "Mahi",
+      "lastName": "Dhoni",
+      "username": "mahi@gmail.com",
+      "password": "mahi@123",
+      "id": 7
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "username": "",
+      "password": "",
+      "id": 8
+    },
+    
+    {
+      "firstName": "hjj",
+      "lastName": "nnnn",
+      "username": "nnn",
+      "password": "jjjj",
+      "id": 10
+    }
+  ],
+  "cityWiseFlight": [
+    {
+      "airline": "https://airhex.com/images/airline-logos/alt/go-first.png",
+      "flightNo": "A5 738",
+      "departure": "01:35",
+      "arrival": "03:45",
+      "duration": "02h 10m",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "ticketP": 6256,
+      "id": 1
+    },
+    {
+      "airline": "https://seekvectorlogo.com/wp-content/uploads/2022/01/indigo-vector-logo-2022.png",
+      "flightNo": "BI5 710",
+      "departure": "02:00",
+      "arrival": "04:15",
+      "duration": "02h 15m",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "ticketP": 5256,
+      "id": 1
+    },
+    {
+      "airline": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVSyQmIhYUI3L_53El2bNf2_m8zx_ikUbgdsUhgwrDPZP-QiZ5r6hBB6KzlOgs-Iffg&usqp=CAU",
+      "flightNo": "B5 700",
+      "departure": "8:10",
+      "arrival": "10:05",
+      "duration": "02h 05m",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "ticketP": 4256,
+      "id": 1
+    },
+    {
+      "airline": "https://seekvectorlogo.com/wp-content/uploads/2022/01/indigo-vector-logo-2022.png",
+      "flightNo": "I5 711",
+      "departure": "02:35",
+      "arrival": "04:45",
+      "duration": "02h 10m",
+      "from": "Pune",
+      "to": "Gondia",
+      "ticketP": 5256,
+      "id": 2
+    },
+    {
+      "airline": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVSyQmIhYUI3L_53El2bNf2_m8zx_ikUbgdsUhgwrDPZP-QiZ5r6hBB6KzlOgs-Iffg&usqp=CAU",
+      "flightNo": "I5 711",
+      "departure": "02:35",
+      "arrival": "04:45",
+      "duration": "02h 10m",
+      "from": "Pune",
+      "to": "Gondia",
+      "ticketP": 5256,
+      "id": 2
+    },
+    {
+      "airline": "https://airhex.com/images/airline-logos/alt/go-first.png",
+      "flightNo": "I5 711",
+      "departure": "02:35",
+      "arrival": "04:45",
+      "duration": "02h 10m",
+      "from": "Pune",
+      "to": "Gondia",
+      "ticketP": 5256,
+      "id": 2
+    }
+  ],
+  "mybooking": [
+    {
+      "firstName": "Mukesh",
+      "lastName": "Chouhan",
+      "mobileno": "1122334455",
+      "email": "mks@gmail.com",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 5256,
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "firstName": "Devesh",
+      "lastName": "Khedkar",
+      "mobileno": 1112225556,
+      "email": "dev@gmail.com",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 6256,
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "firstName": "Suresh",
+      "lastName": "Raina",
+      "mobileno": 8899776644,
+      "email": "s@gmail.com",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 6256,
+      "status": "Active",
+      "id": 3
+    },
+    {
+      "firstName": "check",
+      "lastName": "check",
+      "mobileno": 1234654565,
+      "email": "ch@gmail.com",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 6256,
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "firstName": "mks",
+      "lastName": "cho",
+      "mobileno": 456,
+      "email": "mkdd@123",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 6256,
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "firstName": "mmmm",
+      "lastName": "llll",
+      "mobileno": 456879,
+      "email": "mks@gmail.com",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 6256,
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobileno": "",
+      "email": "",
+      "from": "Nagpur",
+      "to": "Mumbai",
+      "price": 4256,
+      "status": "Active",
+      "id": 7
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobileno": "",
+      "email": "",
+      "from": "Pune",
+      "to": "Gondia",
+      "price": 5256,
+      "status": "Active",
+      "id": 8
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "mobileno": "",
+      "email": "",
+      "from": "Pune",
+      "to": "Gondia",
+      "price": 5256,
+      "status": "Active",
+      "id": 9
+    }
+  ],
+  "complete": [
+    {
+      "firstName": "Chetan",
+      "lastName": "Desai",
+      "mobileno": "9999334455",
+      "email": "d@gmail.com",
+      "from": "Raipur",
+      "to": "Mumbai",
+      "price": 7256,
+      "status": "complete",
+      "id": 1
+    },
+    {
+      "firstName": "Amol",
+      "lastName": "Mashke",
+      "mobileno": "9011334455",
+      "email": "a@gmail.com",
+      "from": "Pune",
+      "to": "Nagpur",
+      "price": 8256,
+      "status": "complete",
+      "id": 2
+    },
+    {
+      "firstName": "Manoj",
+      "lastName": "Munda",
+      "mobileno": "8011334455",
+      "email": "mm@gmail.com",
+      "from": "Delhi",
+      "to": "Pune",
+      "price": 9256,
+      "status": "complete",
+      "id": 3
+    }
+  ],
+  "cancelled": [
+    {
+      "firstName": "Manoj",
+      "lastName": "Munda",
+      "mobileno": "8011334455",
+      "email": "mm@gmail.com",
+      "from": "Delhi",
+      "to": "Nagpur",
+      "price": 9256,
+      "status": "cancelled",
+      "id": 1
+    },
+    {
+      "firstName": "Chetan",
+      "lastName": "Desai",
+      "mobileno": "9999334455",
+      "email": "d@gmail.com",
+      "from": "Jaipur",
+      "to": "Mumbai",
+      "price": 7256,
+      "status": "cancelled",
+      "id": 2
+    },
+    {
+      "firstName": "Amol",
+      "lastName": "Mashke",
+      "mobileno": "9011334455",
+      "email": "a@gmail.com",
+      "from": "Kolkata",
+      "to": "Nagpur",
+      "price": 8556,
+      "status": "cancelled",
+      "id": 3
+    }
+  ]
+}
